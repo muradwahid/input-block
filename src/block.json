@@ -1,0 +1,224 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "b-blocks/input-field",
+	"version": "1.0.0",
+	"title": "Input Field",
+	"category": "bform",
+	"description": "Short description of the block",
+	"keywords": [
+		"input field",
+		"text field",
+		"input",
+		"form field",
+		"field"
+	],
+	"ancestor": [
+		"b-blocks/b-form"
+	],
+	"textdomain": "b-blocks",
+	"attributes": {
+		"clientId":{
+			"type":"string",
+			"default":""
+		
+		},
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"inputField":{
+			"type":"object",
+			"default":{
+				"type":"text",
+				"placeholder":"Placeholder...",
+				"value":"",
+				"icon":"",
+				"name":"input"
+			}
+		},
+		"label":{
+			"type":"object",
+			"default":{
+				"text":"Input Field Label"
+			}
+		},
+		"options":{
+			"type":"object",
+			"default":{
+				"isLabel":true,
+				"isRequired":false,
+				"isIcon":true
+			}
+		},
+		"password":{
+			"type":"object",
+			"default":{
+				"options":{
+					"isWeek":true,
+					"isStrengthMeter":false,
+					"isStrengthText":false,
+					"isVisibilityIcon":true,
+					"passStrengthText":"default",
+					"validationText":"default",
+					"isUpperCase":true,
+					"isLowerCase":true,
+					"isNumber":true,
+					"isSpecialChar":true,
+					"minLength":8
+				},
+				"strengthText":{
+					"veryWeak":"Very Weak",
+					"weak":"Weak Password",
+					"medium":"Medium Password",
+					"strong":"Strong Password"
+				}
+			}
+		},
+		"validation":{
+			"type":"object",
+			"default":{
+				"errorMessage":{
+					"text": {
+						"missing": "This field is required."
+					},
+					"email":{
+						"missing":"This field is required.",
+						"invalid":""
+					},
+					"password":{
+						"missing":"This field is required.",
+						"invalid":"",
+						"customValidation":""
+					},
+					"url":{
+						"missing":"This Field is required."
+					}
+				}
+			}
+		},
+		"styles": {
+			"type":"object",
+			"default":{
+				"inputField": {
+					"typo":{"fontSize":{"desktop":"16px"}},
+					"colors":{
+						"text":"",
+						"placeholder":""
+					},
+					"desktop":{ "padding":{} },
+					"tablet":{ "padding": {} },
+					"mobile":{ "padding": {} },
+					"normal": {
+						"border":{},
+						"bg":{},
+						"radius":{"desktop":{},"tablet":{},"mobile":{}},
+						"shadow":{}
+					},
+					"focus": {
+						"border": {},
+						"bg": {},
+						"radius": {"desktop": {}, "tablet": {}, "mobile": {}},
+						"shadow": {}
+					},
+					"hover": {
+						"border": {},
+						"bg": {},
+						"radius": {"desktop": {}, "tablet": {}, "mobile": {}},
+						"shadow": {}}
+				},
+				"label": {
+					"typo":{"fontSize": { "desktop": "16px" }},
+					"colors":{ "required":"", "text":"" },
+					"desktop": { "margin": {} },
+					"tablet": { "margin": {} },
+					"mobile": { "margin": {} },
+					"position": "top"
+				},
+				"icon":{
+					"field":{
+						"color": "",
+						"desktop": { "size": "", "position": { 	"x": "", 	"y": "" } },
+						"tablet": { "size": "", "position": { 	"x": "", 	"y": "" } },
+						"mobile": { "size": "", "position": { 	"x": "", 	"y": "" } }
+					},
+					"password":{
+						"color": "",
+						"desktop": { "size": "", "position": { 	"x": "", 	"y": "" } },
+						"tablet": { "size": "", "position": { 	"x": "", 	"y": "" } },
+						"mobile": { "size": "", "position": { 	"x": "", 	"y": "" } }
+					}
+				},
+				"error":{
+					"text":{
+						"typo": { "fontSize": { 	"desktop": "14px" } },
+						"color": "#f5222d",
+						"bg": {},
+						"desktop": { "margin": {}, "padding": {}, "border": {}, "radius": {} },
+						"tablet": { "margin": {}, "padding": {}, "border": {}, "radius": {} },
+						"mobile": { "margin": {}, "padding": {}, "border": {}, "radius": {} }
+					},
+					"input":{
+						"desktop": { "margin": {}, "padding": {}, "border": {}, "radius": {} },
+						"tablet": { "margin": {}, "padding": {}, "border": {}, "radius": {} },
+						"mobile": { "margin": {}, "padding": {}, "border": {}, "radius": {} }
+					}
+				},
+				"password":{
+					"strength":{
+						"container":{
+							"desktop": { "width": "", "height": "", "margin": {}, "padding": {} },
+							"tablet": { "width": "", "height": "", "margin": {}, "padding": {} },
+							"mobile": { "width": "", "height": "", "margin": {}, "padding": {} },
+							"border": {},
+							"radius": {},
+							"bg": { "color": "" }
+						},
+						"meter":{
+							"gap":"",
+							"desktop": { "width": "", "height": "", "margin": {}, "padding": {} },
+							"tablet": { "width": "", "height": "", "margin": {}, "padding": {} },
+							"mobile": { "width": "", "height": "", "margin": {}, "padding": {} },
+							"border": {},
+							"radius": {}
+						},
+						"text":{
+							"desktop": { "margin": {}, "padding": {} },
+							"tablet": { "margin": {}, "padding": {} },
+							"mobile": { "margin": {}, "padding": {} },
+							"typography": {"fontSize": { "desktop": "15px"}}
+						},
+						"colors": {
+							"veryWeak": "#f5222d",
+							"weak": "#fa8c16",
+							"medium": "#fadb14",
+							"strong": "#7cb305"
+						}
+					}
+				}
+			}
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {}
+	},
+	"providesContext": {
+		"b-blocks/inputClientId":"clientId"
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./view.css",
+	"render": "file:./render.php",
+	"viewScript": [
+		"file:./view.js",
+		"react",
+		"react-dom"
+	]
+}

@@ -1,0 +1,102 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.wp-block-b-blocks-input-field {
+  box-sizing: border-box;
+}
+.wp-block-b-blocks-input-field * {
+  box-sizing: border-box;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container {
+  display: flex;
+  width: 100%;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container.label-position-top {
+  flex-direction: column;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container.label-position-bottom {
+  flex-direction: column-reverse;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container.label-position-left {
+  flex-direction: row;
+  align-items: center;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container.label-position-right {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-label {
+  white-space: nowrap;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-label .b-blocks-input-field-required {
+  color: #ff2b2b;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field .b-blocks-input-field-icon {
+  position: absolute;
+  display: flex;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10px;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field .b-blocks-input-field-icon > svg {
+  height: 20px;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field input {
+  width: 100%;
+  padding: 10px 10px;
+  min-height: unset;
+  line-height: normal;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-family: unset;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field .b-blocks-input-field-passVisibilityIcon {
+  position: absolute;
+  display: flex;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 10px;
+  height: 20px;
+  pointer-events: all;
+  cursor: pointer;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-error-message {
+  display: none;
+  color: #f5222d;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-passStrengthMeter-container {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-passStrengthMeter-container .b-blocks-input-field-passStrengthMeter {
+  height: 5px;
+  width: 100%;
+  background-color: #e3e3e3;
+  transition: all 0.2s ease-in-out;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-passStrengthMeter-container .b-blocks-input-field-passStrengthMeter.veryWeakPass {
+  background-color: #f5222d;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-passStrengthMeter-container .b-blocks-input-field-passStrengthMeter.weakPass {
+  background-color: #fa8c16;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-passStrengthMeter-container .b-blocks-input-field-passStrengthMeter.mediumPass {
+  background-color: #fadb14;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-container .b-blocks-input-field-passStrengthMeter-container .b-blocks-input-field-passStrengthMeter.strongPass {
+  background-color: #7cb305;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-error-container .b-blocks-input-field > input {
+  border-color: #f5222d;
+}
+.wp-block-b-blocks-input-field .b-blocks-input-field-error-container .b-blocks-input-field-error-message {
+  display: block !important;
+}
+
+/*# sourceMappingURL=view.css.map*/

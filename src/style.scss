@@ -1,0 +1,112 @@
+$primaryColor: #4527a4;
+$red: #f5222d;
+$orange: #fa8c16;
+$yellow: #fadb14;
+$green: #7cb305;
+.wp-block-b-blocks-input-field {
+	box-sizing: border-box;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.b-blocks-input-field-container{
+		display: flex;
+		width: 100%;
+		&.label-position-top{
+			flex-direction: column;
+		}
+		&.label-position-bottom{
+			flex-direction: column-reverse;
+		}
+		&.label-position-left{
+			flex-direction: row;
+			align-items: center;
+		}
+		&.label-position-right{
+			flex-direction: row-reverse;
+			align-items: center;
+		}
+		.b-blocks-input-field-label{
+			white-space: nowrap;
+			.b-blocks-input-field-required{
+				color: #ff2b2b;
+			}
+		}
+		.b-blocks-input-field{
+			position: relative;
+			display: flex;
+			width: 100%;
+			.b-blocks-input-field-icon{
+				position: absolute;
+				display: flex;
+				transform: translateY(-50%);
+				top: 50%;
+				left:10px;
+				&>svg{
+					height: 20px;
+				}
+			}
+			input{
+				width: 100%;
+				padding: 10px 10px;
+				min-height: unset;
+				line-height: normal;
+				border-radius:3px;
+				border: 1px solid #ccc;
+				font-family: unset;
+			}
+			.b-blocks-input-field-passVisibilityIcon{
+				position: absolute;
+				display: flex;
+				transform: translateY(-50%);
+				top: 50%;
+				right:10px;
+				height: 20px;
+				pointer-events: all;
+				cursor: pointer;
+			}
+		}
+		.b-blocks-input-field-error-message{
+			display: none;
+			color: $red;
+		}
+
+		.b-blocks-input-field-passStrengthMeter-container{
+			display: flex;
+			gap: 5px;
+			margin: 10px 0;
+			.b-blocks-input-field-passStrengthMeter{
+				height: 5px;
+				width: 100%;
+				background-color: #e3e3e3;
+				transition: all 0.2s ease-in-out;
+				&.veryWeakPass{
+					background-color: $red;
+				}
+				&.weakPass{
+					background-color: $orange;
+				}
+				&.mediumPass{
+					background-color: $yellow;
+				}
+				&.strongPass{
+					background-color: $green;
+				}
+			}
+		}
+
+	}
+
+	.b-blocks-input-field-error-container{
+		.b-blocks-input-field{
+			&>input{
+				border-color: $red;
+			}
+		}
+		.b-blocks-input-field-error-message{
+			display: block !important;
+		}
+	}
+
+}
