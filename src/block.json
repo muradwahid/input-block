@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"title": "Input Field",
 	"category": "bform",
-	"description": "Short description of the block",
+	"description": "Form Input Field",
 	"keywords": [
 		"input field",
 		"text field",
@@ -18,11 +18,6 @@
 	],
 	"textdomain": "b-blocks",
 	"attributes": {
-		"clientId":{
-			"type":"string",
-			"default":""
-		
-		},
 		"align": {
 			"type": "string",
 			"default": ""

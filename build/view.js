@@ -1474,12 +1474,16 @@ const useFieldValidate = (inputValues, type, errorMessage, isRequired, passwordA
       if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(inputValues)) {
         setMessage(errorMessage.email.invalid);
         setIsValid(true);
+        if (!inputValues) {
+          // setMessage(errorMessage.email.missing);
+          setIsValid(false);
+        }
       } else {
         setMessage('');
         setIsValid(false);
       }
     } else if (type === 'password') {
-      if (!pass) {
+      if (!pass && !options.isWeek) {
         if (options.validationText === 'default') {
           setMessage(`${options.minLength} characters, Number, Uppercase, Lowercase, Special character`);
         } else {
